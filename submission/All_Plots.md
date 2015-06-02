@@ -22,7 +22,7 @@ ex.proj1 <- suppressWarnings(fread("household_power_consumption.txt", sep=";", h
 
 ```
 ## 
-Read 88.7% of 2075259 rows
+Read 86.7% of 2075259 rows
 Read 2075259 rows and 9 (of 9) columns from 0.124 GB file in 00:00:03
 ```
 
@@ -47,7 +47,7 @@ The below code generates the required Plot 1 of this assignment.
 hist(ex.proj1$Global_active_power.1, col="red", xlab="Global Active Power (kilowatts)", main="Global Active Power")
 ```
 
-![](All_Plots_files/figure-html/plot1-1.png) 
+![](./md_figs/plot1-1.png) 
   
   
 ## Plot 2
@@ -58,7 +58,7 @@ The below code generates the required Plot 2 of this assignment.
 plot(ex.proj1$Time.1, ex.proj1$Global_active_power.1, type="l", ylab="Global Active Power (kilowatts)", xlab="")
 ```
 
-![](All_Plots_files/figure-html/plot2-1.png) 
+![](./md_figs/plot2-1.png) 
   
   
 ## Plot 3
@@ -72,7 +72,7 @@ lines(ex.proj1$Time.1, ex.proj1$Sub_metering_3, type="l", col="blue")
 legend("topright", lty=c(1,1,1), col=c("black", "red", "blue"), legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), cex=0.6)
 ```
 
-![](All_Plots_files/figure-html/plot3-1.png) 
+![](./md_figs/plot3-1.png) 
   
   
 ## Plot 4
@@ -91,7 +91,7 @@ plot(ex.proj1$Time.1, ex.proj1$Voltage, type="l", col="black", xlab="datetime", 
 plot(ex.proj1$Time.1, ex.proj1$Global_reactive_power, type="l", col="black", xlab="datetime", ylab="Global_reactive_power")
 ```
 
-![](All_Plots_files/figure-html/plot4-1.png) 
+![](./md_figs/plot4-1.png) 
 
 ```r
 par(par.dflt)
